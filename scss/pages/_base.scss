@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$tipografiatitulo: 'ADLaM Display';
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: #191919;
+}
+
+p{
+    font-family: $tipografiatitulo;
+}
+
+h1{
+    font-family: $tipografiatitulo;
+}
+
+h2{
+    font-family: $tipografiatitulo;
+}
+

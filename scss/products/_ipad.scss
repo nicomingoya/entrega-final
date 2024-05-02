@@ -1,0 +1,141 @@
+/*PAGE IPAD*/
+
+.padreipad{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(2 ,50%) ;
+    grid-template-rows: repeat(4 ,25%);
+    grid-template-areas: 
+    "ipad1 ipad1 "
+    "ipad2 ipad3 "
+    "ipad4 ipad5 "
+    "ipad6 ipad7";
+    text-align: center;
+}
+.padreipad { transition: transform 0.1s ease-in-out;
+}
+.padreipad img:hover{
+    transform: scale(1.1);
+}
+.padreipad img{
+    width: 75%;
+    height: 70%;
+    border-radius: 30px;
+}
+
+.padreipad h1{
+    font-size: 1rem;
+}
+
+.padreipad h3{
+    font-size: 0.8rem;
+}
+
+.padreipad h2{
+    font-size: 0.5rem;
+}
+
+.ipad-1{
+    grid-area: ipad1;
+    background-color: #191919;
+    padding: 10%;
+}
+
+.ipad-1 h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.ipad-1 h3{
+    text-align: center;
+    color: aliceblue;
+}
+
+.ipad-2{
+    grid-area: ipad2;
+}
+
+.ipad-3{
+    grid-area: ipad3;
+}
+
+.ipad-4{
+    grid-area: ipad4;
+}
+
+.ipad-5{
+    grid-area: ipad5;
+}
+
+.ipad-6{
+    grid-area: ipad6;
+}
+
+.ipad-7{
+    grid-area: ipad7;
+}
+
+.ipad-6{
+    grid-area: ipad6;
+}
+
+.ipad-7{
+    grid-area: ipad7;
+}
+
+                                /*480px*/
+
+
+@media (min-width: 480px){
+
+.padreipad h1{
+    font-size: 1.5rem;
+}
+
+.padreipad h3{
+    font-size: 1rem;
+}
+
+.padreipad h2{
+    font-size: 0.8rem;
+}
+
+}
+
+
+
+                                /*TABLET(820px)*/
+
+
+
+@media (min-width: 820px){
+
+.padreipad h1{
+    font-size: 3rem;
+}
+
+.padreipad h3{
+    font-size: 2rem;
+}
+
+.padreipad h2{
+    font-size: 1.5rem;
+}
+
+
+}
+
+
+                                /*Desktop(1000PX)*/
+
+
+
+@media (min-width: 1000px){
+
+.padreipad h1{
+    font-size: 5rem;
+}
+
+}

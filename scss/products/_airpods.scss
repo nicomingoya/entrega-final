@@ -1,0 +1,125 @@
+/*PAGE AIRPODS*/
+
+.padreairpods{
+    background-color: rgb(218, 217, 217);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(2 ,50%) ;
+    grid-template-rows: repeat(3 ,33%);
+    grid-template-areas: 
+    "airpods1 airpods1 "
+    "airpods2 airpods3 "
+    "airpods4 airpods5 ";
+    text-align: center;
+}
+.padreairpods { transition: transform 0.1s ease-in-out;
+}
+.padreairpods img:hover{
+    transform: scale(1.1);
+}
+.padreairpods img{
+    width: 20%;
+    height: 55%;
+    border-radius: 50px;
+}
+
+.padreairpods h1{
+    font-size: 1rem;
+}
+
+.padreairpods h3{
+    font-size: 0.8rem;
+}
+
+.padreairpods h2{
+    font-size: 0.5rem;
+}
+
+.airpods-1{
+    grid-area: airpods1;
+    background-color: #191919;
+    padding: 5%;
+}
+
+.airpods-1 h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.airpods-1 h3{
+    text-align: center;
+    color: aliceblue;
+}
+
+.airpods-2{
+    grid-area: airpods2;
+}
+
+.airpods-3{
+    grid-area: airpods3;
+}
+
+.airpods-4{
+    grid-area: airpods4;
+}
+
+.airpods-5{
+    grid-area: airpods5;
+}
+
+                                /*480px*/
+
+
+@media (min-width: 480px){
+
+.padreairpods h1{
+    font-size: 1.5rem;
+}
+
+.padreairpods h3{
+    font-size: 1rem;
+}
+
+.padreairpods h2{
+    font-size: 0.8rem;
+}
+
+}
+
+
+
+
+                                /*TABLET(820px)*/
+
+
+
+@media (min-width: 820px){
+
+
+.padreairpods h1{
+    font-size: 3rem;
+}
+
+.padreairpods h3{
+    font-size: 2rem;
+}
+
+.padreairpods h2{
+    font-size: 1.5rem;
+}
+
+}
+
+
+                                /*Desktop(1000PX)*/
+
+
+
+@media (min-width: 1000px){
+
+.padreairpods h1{
+    font-size: 5rem;
+}
+
+}

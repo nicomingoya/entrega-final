@@ -1,0 +1,164 @@
+                                /*MOBILE (320PX)*/
+
+/*PAGE IPHONE*/
+
+.padreiphone{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(4 ,25%) ;
+    grid-template-rows: repeat(4 ,25%);
+    grid-template-areas: 
+    "iphone1 iphone1 iphone1 iphone1"
+    "iphone2 iphone3 iphone4 iphone5"
+    "iphone6 iphone7 iphone8 iphone9"
+    "iphone10 iphone11 iphone12 iphone13";
+    text-align: center;
+}
+
+.padreiphone h1{
+    font-size: 1rem;
+}
+
+.padreiphone h3{
+    font-size: 0.8rem;
+}
+
+.padreiphone h2{
+    font-size: 0.5rem;
+}
+
+.padreiphone img{
+    width: 75%;
+    height: 70%;
+    transition: 0.5s;
+
+}
+
+.padreiphone { transition: transform 0.1s ease-in-out;
+}
+.padreiphone img:hover{
+    transform: scale(1.1);
+    border-radius: 30px;
+    
+}
+
+.iphone-1{
+    grid-area: iphone1;
+    background-color: #191919;
+    padding: 10%;
+}
+
+.iphone-1 h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.iphone-1 h3{
+    text-align: center;
+    color: aliceblue;
+}
+
+.iphone-2{
+    grid-area: iphone2;
+}
+
+.iphone-3{
+    grid-area: iphone3;
+}
+
+.iphone-4{
+    grid-area: iphone4;
+}
+
+.iphone-5{
+    grid-area: iphone5;
+}
+
+.iphone-6{
+    grid-area: iphone6;
+}
+
+.iphone-7{
+    grid-area: iphone7;
+}
+
+.iphone-8{
+    grid-area: iphone8;
+}
+
+.iphone-9{
+    grid-area: iphone9;
+}
+
+.iphone-10{
+    grid-area: iphone10;
+}
+
+.iphone-11{
+    grid-area: iphone11;
+}
+
+.iphone-12{
+    grid-area: iphone12;
+}
+
+.iphone-13{
+    grid-area: iphone13;
+}
+
+                                /*480px*/
+
+
+@media (min-width: 480px){
+
+.padreiphone h1{
+    font-size: 1.5rem;
+}
+
+.padreiphone h3{
+    font-size: 1rem;
+}
+
+.padreiphone h2{
+    font-size: 0.8rem;
+}
+
+
+
+}
+
+
+                                /*TABLET(820px)*/
+
+
+
+@media (min-width: 820px){
+
+.padreiphone h1{
+    font-size: 3rem;
+}
+
+.padreiphone h3{
+    font-size: 2rem;
+}
+
+.padreiphone h2{
+    font-size: 1.5rem;
+}
+
+}
+
+                                /*Desktop(1000PX)*/
+
+
+
+@media (min-width: 1000px){
+
+.padreiphone h1{
+    font-size: 5rem;
+}
+
+}
+

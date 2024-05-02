@@ -1,0 +1,132 @@
+/*PAGE APPLE WATCH*/
+
+.padrewatch{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(2 ,50%) ;
+    grid-template-rows: repeat(4 ,25%);
+    grid-template-areas: 
+    "watch1 watch1 "
+    "watch2 watch3 "
+    "watch4 watch5 "
+    "watch6 watch7";
+    text-align: center;
+}
+.padrewatch { transition: transform 0.1s ease-in-out;
+}
+.padrewatch img:hover{
+    transform: scale(1.1);
+}
+.padrewatch img{
+    width: 75%;
+    height: 70%;
+    border-radius: 30px;
+}
+
+.padrewatch h1{
+    font-size: 1rem;
+}
+
+.padrewatch h3{
+    font-size: 0.8rem;
+}
+
+.padrewatch h2{
+    font-size: 0.5rem;
+}
+
+.watch-1{
+    grid-area: watch1;
+    background-color: #191919;
+    padding: 10%;
+}
+
+.watch-1 h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.watch-1 h3{
+    text-align: center;
+    color: aliceblue;
+}
+
+.watch-2{
+    grid-area: watch2;
+}
+
+.watch-3{
+    grid-area: watch3;
+}
+
+.watch-4{
+    grid-area: watch4;
+}
+
+.watch-5{
+    grid-area: watch5;
+}
+
+.watch-6{
+    grid-area: watch6;
+}
+
+.watch-7{
+    grid-area: watch7;
+}
+
+                                /*480px*/
+
+
+@media (min-width: 480px){
+.padrewatch h1{
+    font-size: 1.5rem;
+}
+
+.padrewatch h3{
+    font-size: 1rem;
+}
+
+.padrewatch h2{
+    font-size: 0.8rem;
+}
+
+}
+
+
+
+                                /*TABLET(820px)*/
+
+
+
+@media (min-width: 820px){
+
+.padrewatch h1{
+    font-size: 3rem;
+}
+
+.padrewatch h3{
+    font-size: 2rem;
+}
+
+.padrewatch h2{
+    font-size: 1.5rem;
+}
+
+
+}
+
+
+                                /*Desktop(1000PX)*/
+
+
+
+@media (min-width: 1000px){
+
+.padrewatch h1{
+    font-size: 5rem;
+}
+
+}
