@@ -16,12 +16,13 @@ nav{
 }
 
 .navpadre{
+    width: 100%;
     display: grid;
     grid-template-rows: repeat(2, 70%);
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(5, 20%);
     grid-template-areas: 
-    'nav4  nav2 nav3'
-    'nav1 nav1 nav1';
+    'nav4  nav2 nav2 nav3 nav3'
+    'nav1 nav5 nav6 nav7 nav8';
     align-items: center;
 }
 
@@ -29,21 +30,60 @@ nav{
     display: none;
 }
 
-.navhijos-1m a{
+.navhijos-1mp a{
+    grid-area: nav1;
     text-decoration: none;
     color: aliceblue;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    text-align: left;
 }
-
-.navhijos-1m{
-        display: flex;
-        justify-content: center;
-        text-align: left;
+.navhijos-2mp a{
+    grid-area: nav5;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 0.6rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+.navhijos-3mp a{
+    grid-area: nav6;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 0.6rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+.navhijos-4mp a{
+    grid-area: nav7;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 0.6rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+.navhijos-5mp a{
+    grid-area: nav8;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 0.6rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: left;
 }
 
 .navhijos-2{
     grid-area: nav2;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 .navhijos-2 img{
@@ -61,7 +101,6 @@ nav{
 
 .navhijos-3m a{
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color: aliceblue;
     display: flex;
 }
@@ -90,52 +129,43 @@ nav{
 /*header*/
 @media (min-width: 480px){
 
-    nav{
-        font-family: "ubuntu";
-        font-size: 0.7rem; 
-        height: 155px;
-    }
-    
-        .navpadre{
-        display: grid;
-        grid-template-rows: repeat(2, 70%);
-        grid-template-columns: repeat(3, 33%);
-        grid-template-areas: 
-        'nav4  nav2 nav3'
-        'nav1 nav1 nav1';
-        align-items: center;
-    }
-    .navhijos-1m{
-        display: none;
-    }
+nav{
+    padding-top: 0px;
+    height: 150px;
+}
 
-    .navhijos-1m a{
-        text-decoration: none;
-        color: aliceblue;
-    }
-    
-    
-    .navhijos-1m{
-            display: flex;
-            justify-content: center;
-            text-align: left;
-    }
-    
-    .navhijos-2 img{
-        height: 60px;
-        width: 130px;
-        border-radius: 30px;
-    }
-    
-    .navhijos-3d {
-        display: none;
-    }
-    
-    .navhijos-4m img{
-        height: 50px;
-        width: 50px;
-        border-radius: 100px;
-    }
+.navhijos-1mp a{
+    font-size: 0.8rem;
+
+}
+.navhijos-2mp a{
+    font-size: 0.8rem;
+}
+.navhijos-3mp a{
+    font-size: 0.8rem;
+}
+.navhijos-4mp a{
+    font-size: 0.8rem;
+}
+.navhijos-5mp a{
+    font-size: 0.8rem;
+}
+
+.navhijos-2 img{
+    height: 60px;
+    width: 130px;
+    border-radius: 30px;
+}
+
+.navhijos-3d {
+    display: none;
+}
+
+.navhijos-4m img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
 
 }
 
@@ -149,26 +179,9 @@ nav{
 
 @media (min-width: 600px){
 
-nav{
-    font-family: "ubuntu";
-    font-size: 0.8rem; 
-    height: 155px;
-}
 
 .navhijos-1m{
     display: none;
-}
-
-.navhijos-1m a{
-        text-decoration: none;
-        color: aliceblue;
-}
-
-
-.navhijos-1m{
-        display: flex;
-        justify-content: center;
-        text-align: left;
 }
 
 .navhijos-2 img{
@@ -200,24 +213,15 @@ nav{
 
 @media (min-width: 820px){
 
-    nav{
-        height: 225px;
-        font-size: 1.2rem; 
-    }
+nav{
+    padding-top: 0px;
+    height: 200px;
+}
+
     .navhijos-1d{
         display: none;
     }
-    .navhijos-1m a{
-        text-decoration: none;
-        color: aliceblue;
-    }
-    
-    
-    .navhijos-1m{
-            display: flex;
-            justify-content: center;
-            text-align: left;
-}
+
 .navhijos-2 img{
         height: 90px;
         width: 150px;
@@ -261,7 +265,19 @@ nav{
     align-items: center;
 }
 
-.navhijos-1m{
+.navhijos-1mp{
+    display: none;
+}
+.navhijos-2mp{
+    display: none;
+}
+.navhijos-3mp{
+    display: none;
+}
+.navhijos-4mp{
+    display: none;
+}
+.navhijos-5mp{
     display: none;
 }
 
@@ -277,7 +293,8 @@ nav{
 
 .navhijos-2{
     grid-area: nav2;
-
+    display: flex;
+    justify-content: center;
 }
 
 .navhijos-2 { transition: transform 0.1s ease-in-out;
@@ -339,14 +356,25 @@ nav{
     .navhijos-1d{
         grid-area: nav1;
     }
-    
+    .navhijos-1mp{
+        display: none;
+    }
+    .navhijos-2mp{
+        display: none;
+    }
+    .navhijos-3mp{
+        display: none;
+    }
+    .navhijos-4mp{
+        display: none;
+    }
+    .navhijos-5mp{
+        display: none;
+    }
     .navhijos-1d img{
         height: 60px;
         width: 60px;
         border-radius: 30px;
-    }
-    .navhijos-1m{
-        display: none;
     }
     .navhijos-3m{
         display: none;

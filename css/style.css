@@ -36,10 +36,11 @@ nav {
 }
 
 .navpadre {
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(2, 70%);
-  grid-template-columns: repeat(3, 33%);
-  grid-template-areas: "nav4  nav2 nav3" "nav1 nav1 nav1";
+  grid-template-columns: repeat(5, 20%);
+  grid-template-areas: "nav4  nav2 nav2 nav3 nav3" "nav1 nav5 nav6 nav7 nav8";
   align-items: center;
 }
 
@@ -47,12 +48,55 @@ nav {
   display: none;
 }
 
-.navhijos-1m a {
+.navhijos-1mp a {
+  grid-area: nav1;
   text-decoration: none;
   color: aliceblue;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  text-align: left;
 }
 
-.navhijos-1m {
+.navhijos-2mp a {
+  grid-area: nav5;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 0.6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.navhijos-3mp a {
+  grid-area: nav6;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 0.6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.navhijos-4mp a {
+  grid-area: nav7;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 0.6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.navhijos-5mp a {
+  grid-area: nav8;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 0.6rem;
+  text-align: center;
   display: flex;
   justify-content: center;
   text-align: left;
@@ -61,7 +105,7 @@ nav {
 .navhijos-2 {
   grid-area: nav2;
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 
 .navhijos-2 img {
@@ -79,7 +123,6 @@ nav {
 
 .navhijos-3m a {
   text-decoration: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: aliceblue;
   display: flex;
 }
@@ -104,28 +147,23 @@ nav {
 /*header*/
 @media (min-width: 480px) {
   nav {
-    font-family: "ubuntu";
-    font-size: 0.7rem;
-    height: 155px;
+    padding-top: 0px;
+    height: 150px;
   }
-  .navpadre {
-    display: grid;
-    grid-template-rows: repeat(2, 70%);
-    grid-template-columns: repeat(3, 33%);
-    grid-template-areas: "nav4  nav2 nav3" "nav1 nav1 nav1";
-    align-items: center;
+  .navhijos-1mp a {
+    font-size: 0.8rem;
   }
-  .navhijos-1m {
-    display: none;
+  .navhijos-2mp a {
+    font-size: 0.8rem;
   }
-  .navhijos-1m a {
-    text-decoration: none;
-    color: aliceblue;
+  .navhijos-3mp a {
+    font-size: 0.8rem;
   }
-  .navhijos-1m {
-    display: flex;
-    justify-content: center;
-    text-align: left;
+  .navhijos-4mp a {
+    font-size: 0.8rem;
+  }
+  .navhijos-5mp a {
+    font-size: 0.8rem;
   }
   .navhijos-2 img {
     height: 60px;
@@ -145,22 +183,8 @@ nav {
 /*600px*/
 /*header*/
 @media (min-width: 600px) {
-  nav {
-    font-family: "ubuntu";
-    font-size: 0.8rem;
-    height: 155px;
-  }
   .navhijos-1m {
     display: none;
-  }
-  .navhijos-1m a {
-    text-decoration: none;
-    color: aliceblue;
-  }
-  .navhijos-1m {
-    display: flex;
-    justify-content: center;
-    text-align: left;
   }
   .navhijos-2 img {
     height: 60px;
@@ -181,20 +205,11 @@ nav {
 /*header*/
 @media (min-width: 820px) {
   nav {
-    height: 225px;
-    font-size: 1.2rem;
+    padding-top: 0px;
+    height: 200px;
   }
   .navhijos-1d {
     display: none;
-  }
-  .navhijos-1m a {
-    text-decoration: none;
-    color: aliceblue;
-  }
-  .navhijos-1m {
-    display: flex;
-    justify-content: center;
-    text-align: left;
   }
   .navhijos-2 img {
     height: 90px;
@@ -225,7 +240,19 @@ nav {
     grid-template-areas: "nav1 nav2 nav2 nav3";
     align-items: center;
   }
-  .navhijos-1m {
+  .navhijos-1mp {
+    display: none;
+  }
+  .navhijos-2mp {
+    display: none;
+  }
+  .navhijos-3mp {
+    display: none;
+  }
+  .navhijos-4mp {
+    display: none;
+  }
+  .navhijos-5mp {
     display: none;
   }
   .navhijos-1d {
@@ -238,6 +265,8 @@ nav {
   }
   .navhijos-2 {
     grid-area: nav2;
+    display: flex;
+    justify-content: center;
   }
   .navhijos-2 {
     transition: transform 0.1s ease-in-out;
@@ -282,13 +311,25 @@ nav {
   .navhijos-1d {
     grid-area: nav1;
   }
+  .navhijos-1mp {
+    display: none;
+  }
+  .navhijos-2mp {
+    display: none;
+  }
+  .navhijos-3mp {
+    display: none;
+  }
+  .navhijos-4mp {
+    display: none;
+  }
+  .navhijos-5mp {
+    display: none;
+  }
   .navhijos-1d img {
     height: 60px;
     width: 60px;
     border-radius: 30px;
-  }
-  .navhijos-1m {
-    display: none;
   }
   .navhijos-3m {
     display: none;
@@ -950,8 +991,15 @@ nav {
 /*main*/
 /*MOBILE (320PX)*/
 /*PAGE IPHONE*/
+.naviphone {
+  position: static;
+}
+
 .padreiphone {
-  background-color: white;
+  background-image: url("../images/fondos/fondoiphone.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   width: 100%;
   height: 100%;
   display: grid;
@@ -959,6 +1007,7 @@ nav {
   grid-template-rows: repeat(4, 25%);
   grid-template-areas: "iphone1 iphone1 iphone1 iphone1" "iphone2 iphone3 iphone4 iphone5" "iphone6 iphone7 iphone8 iphone9" "iphone10 iphone11 iphone12 iphone13";
   text-align: center;
+  border-bottom: solid black 5px;
 }
 
 .padreiphone h1 {
@@ -986,6 +1035,7 @@ nav {
 .padreiphone img:hover {
   transform: scale(1.1);
   border-radius: 30px;
+  background-color: #f0f0f0;
 }
 
 .iphone-1 {
@@ -1078,13 +1128,25 @@ nav {
 }
 /*Desktop(1000PX)*/
 @media (min-width: 1000px) {
+  body {
+    background-image: url("/images/fondos/fondohelp.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
   .padreiphone h1 {
     font-size: 5rem;
   }
 }
 /*PAGE IPAD*/
+.navipad {
+  position: static;
+}
+
 .padreipad {
-  background-color: white;
+  background-image: url("../images/fondos/fondoipad.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   width: 100%;
   height: 100%;
   display: grid;
@@ -1092,6 +1154,7 @@ nav {
   grid-template-rows: repeat(4, 25%);
   grid-template-areas: "ipad1 ipad1 " "ipad2 ipad3 " "ipad4 ipad5 " "ipad6 ipad7";
   text-align: center;
+  border-bottom: solid black 5px;
 }
 
 .padreipad {
@@ -1199,6 +1262,10 @@ nav {
   }
 }
 /*PAGE MACBOOCK*/
+.navmacbook {
+  position: static;
+}
+
 .padremacbook {
   background-color: white;
   width: 100%;
@@ -1208,6 +1275,7 @@ nav {
   grid-template-rows: repeat(4, 25%);
   grid-template-areas: "macbook1 macbook1 macbook1 " "macbook2 macbook3 macbook4 " "macbook5 macbook6 macbook7 " "macbook8 macbook9 macbook10 ";
   text-align: center;
+  border-bottom: solid black 5px;
 }
 
 .padremacbook h1 {
@@ -1318,6 +1386,10 @@ nav {
   }
 }
 /*PAGE APPLE WATCH*/
+.navapplewatch {
+  position: static;
+}
+
 .padrewatch {
   background-color: white;
   width: 100%;
@@ -1327,6 +1399,7 @@ nav {
   grid-template-rows: repeat(4, 25%);
   grid-template-areas: "watch1 watch1 " "watch2 watch3 " "watch4 watch5 " "watch6 watch7";
   text-align: center;
+  border-bottom: solid black 5px;
 }
 
 .padrewatch {
@@ -1426,6 +1499,10 @@ nav {
   }
 }
 /*PAGE AIRPODS*/
+.navairpods {
+  position: static;
+}
+
 .padreairpods {
   background-color: rgb(218, 217, 217);
   width: 100%;
@@ -1435,6 +1512,7 @@ nav {
   grid-template-rows: repeat(3, 33%);
   grid-template-areas: "airpods1 airpods1 " "airpods2 airpods3 " "airpods4 airpods5 ";
   text-align: center;
+  border-bottom: solid black 5px;
 }
 
 .padreairpods {
@@ -1541,9 +1619,9 @@ nav {
 }
 
 .footer-hijos img {
-  width: 22%;
-  height: 22%;
-  border-radius: 40%;
+  width: 80px;
+  height: 60px;
+  border-radius: 0%;
   align-self: center;
 }
 
@@ -1553,7 +1631,7 @@ nav {
 
 .footer-hijos a p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   align-self: flex-end;
 }
@@ -1568,12 +1646,19 @@ nav {
 /*600px*/
 /*footer*/
 @media (min-width: 600px) {
+  .footer {
+    height: 30vh;
+  }
   .footer-hijos img {
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 100px;
   }
   .footer-hijos a p {
     font-size: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: flex-end;
   }
 }
 /*/footer*/
@@ -1581,9 +1666,12 @@ nav {
 /*footer*/
 @media (min-width: 820px) {
   /*footer*/
+  .footer {
+    height: 35vh;
+  }
   .footer-hijos img {
-    width: 70px;
-    height: 70px;
+    width: 170px;
+    height: 120px;
   }
 }
 /*/footer*/
@@ -1591,12 +1679,18 @@ nav {
 /*footer*/
 @media (min-width: 1000px) {
   .footer {
-    height: 38vh;
+    height: 40vh;
+  }
+  .footer-hijos {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .footer-hijos img {
-    width: 130px;
-    height: 130px;
-    border-radius: 40%;
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
   }
   .footer-hijos a p {
     font-size: 1rem;

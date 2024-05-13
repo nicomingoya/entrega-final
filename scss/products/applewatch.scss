@@ -1,5 +1,8 @@
 /*PAGE APPLE WATCH*/
+.navapplewatch {
+    position: static;
 
+}
 .padrewatch{
     background-color: white;
     width: 100%;
@@ -13,6 +16,7 @@
     "watch4 watch5 "
     "watch6 watch7";
     text-align: center;
+    border-bottom: solid black 5px;
 }
 .padrewatch { transition: transform 0.1s ease-in-out;
 }

@@ -1,5 +1,8 @@
 /*PAGE MACBOOCK*/
+.navmacbook {
+    position: static;
 
+}
 .padremacbook{
     background-color: white;
     width: 100%;
@@ -13,6 +16,7 @@
     "macbook5 macbook6 macbook7 "
     "macbook8 macbook9 macbook10 ";
     text-align: center;
+    border-bottom: solid black 5px;
 }
 
 .padremacbook h1{

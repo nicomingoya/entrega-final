@@ -1,7 +1,13 @@
 /*PAGE IPAD*/
+.navipad {
+    position: static;
 
+}
 .padreipad{
-    background-color: white;
+    background-image: url("../images/fondos/fondoipad.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
     width: 100%;
     height: 100%;
     display: grid;
@@ -13,6 +19,7 @@
     "ipad4 ipad5 "
     "ipad6 ipad7";
     text-align: center;
+    border-bottom: solid black 5px;
 }
 .padreipad { transition: transform 0.1s ease-in-out;
 }

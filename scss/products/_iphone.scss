@@ -1,9 +1,15 @@
                                 /*MOBILE (320PX)*/
 
 /*PAGE IPHONE*/
+.naviphone {
+    position: static;
 
+}
 .padreiphone{
-    background-color: white;
+    background-image: url("../images/fondos/fondoiphone.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
     width: 100%;
     height: 100%;
     display: grid;
@@ -15,6 +21,7 @@
     "iphone6 iphone7 iphone8 iphone9"
     "iphone10 iphone11 iphone12 iphone13";
     text-align: center;
+    border-bottom: solid black 5px;
 }
 
 .padreiphone h1{
@@ -41,6 +48,7 @@
 .padreiphone img:hover{
     transform: scale(1.1);
     border-radius: 30px;
+    background-color: #f0f0f0;
     
 }
 
@@ -155,10 +163,13 @@
 
 
 @media (min-width: 1000px){
-
+    body{
+        background-image: url("/images/fondos/fondohelp.jpeg");
+        background-size: cover;
+        background-position: center;
+    }
 .padreiphone h1{
     font-size: 5rem;
 }
 
 }
-

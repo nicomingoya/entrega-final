@@ -1,5 +1,8 @@
 /*PAGE AIRPODS*/
+.navairpods {
+    position: static;
 
+}
 .padreairpods{
     background-color: rgb(218, 217, 217);
     width: 100%;
@@ -12,6 +15,7 @@
     "airpods2 airpods3 "
     "airpods4 airpods5 ";
     text-align: center;
+    border-bottom: solid black 5px;
 }
 .padreairpods { transition: transform 0.1s ease-in-out;
 }
