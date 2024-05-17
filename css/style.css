@@ -1048,13 +1048,13 @@ nav {
 }
 
 .iphone-1 h1 {
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
 .iphone-1 h3 {
   text-align: center;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
 }
 
 .iphone-2 {
@@ -1165,9 +1165,8 @@ nav {
 }
 
 .padreipad img {
-  width: 75%;
-  height: 70%;
-  border-radius: 30px;
+  width: 60%;
+  height: 55%;
 }
 
 .padreipad h1 {
@@ -1293,8 +1292,8 @@ nav {
 }
 
 .padremacbook img {
-  width: 55%;
-  height: 50%;
+  width: 60%;
+  height: 55%;
   border-radius: 20px;
 }
 
@@ -1318,6 +1317,10 @@ nav {
 
 .macbook-1 h3 {
   text-align: center;
+  color: aliceblue;
+}
+
+.padremacbook h2 {
   color: aliceblue;
 }
 
@@ -1416,8 +1419,8 @@ nav {
 }
 
 .padrewatch img {
-  width: 75%;
-  height: 70%;
+  width: 60%;
+  height: 50%;
   border-radius: 30px;
 }
 
@@ -1570,7 +1573,7 @@ nav {
 
 .airpods-1 h1 {
   color: aliceblue;
-  text-align: start;
+  text-align: center;
 }
 
 .airpods-1 h3 {
