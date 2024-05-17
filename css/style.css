@@ -380,6 +380,7 @@ nav {
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(1, 80%);
   grid-template-areas: "buy3 buy4 buy5 buy6";
+  border-bottom: solid black 5px;
 }
 
 .buy-2 {
@@ -428,6 +429,10 @@ nav {
 
 /*PAGE HELPBUY*/
 /*BOOTSTRAP*/
+.padrehelp {
+  border-bottom: solid black 5px;
+}
+
 .help img {
   height: 100%;
   width: 100%;
@@ -491,6 +496,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-bottom: solid black 5px;
 }
 
 .login-title {
@@ -1025,6 +1031,7 @@ nav {
 
 .padreiphone h2 {
   font-size: 0.5rem;
+  color: aliceblue;
 }
 
 .padreiphone img {
@@ -1059,6 +1066,7 @@ nav {
 
 .iphone-2 {
   grid-area: iphone2;
+  width: 200px;
 }
 
 .iphone-3 {

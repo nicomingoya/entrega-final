@@ -430,6 +430,7 @@ nav{
     grid-template-rows: repeat(1 ,80%);
     grid-template-areas: 
     "buy3 buy4 buy5 buy6";
+    border-bottom: solid black 5px;
 }
 .buy-2 { transition: transform 0.1s ease-in-out;
 }
@@ -478,7 +479,9 @@ nav{
                                 /*PAGE HELPBUY*/
 
                         /*BOOTSTRAP*/
-
+.padrehelp{
+    border-bottom: solid black 5px;
+}
 .help img{
     height: 100%;
     width: 100%;
@@ -546,6 +549,7 @@ nav{
     height: 80vh;
     @include flex-center;
     flex-direction: column;
+    border-bottom: solid black 5px;
 }
 
 .login-title{
