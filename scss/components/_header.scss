@@ -558,8 +558,33 @@ nav{
     color: aliceblue;
     text-align: center;
     padding: 10px;
+    animation: lazo-izquierda 2s ease-in-out infinite alternate, 
+    lazo-derecha 2s ease-in-out infinite alternate;
 }
 
+@keyframes lazo-izquierda {
+    0% {
+transform: translateX(0);
+}
+    50% {
+    transform: translateX(-30px); 
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes lazo-derecha {
+    0% {
+    transform: translateX(0);
+    }
+    50% {
+      transform: translateX(30px); 
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
 .login-0{
     display: flex;
     flex-direction: column;
