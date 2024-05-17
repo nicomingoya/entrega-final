@@ -4,7 +4,7 @@
 
 }
 .padreipad{
-    background-image: url("../images/fondos/fondoipad.png");
+    background-image: url("../images/fondos/fondoipad.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -21,8 +21,7 @@
     text-align: center;
     border-bottom: solid black 5px;
 }
-.padreipad { transition: transform 0.1s ease-in-out;
-}
+
 .padreipad img:hover{
     transform: scale(1.1);
 }

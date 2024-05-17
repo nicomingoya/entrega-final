@@ -43,19 +43,19 @@
 
 }
 
-.padreiphone { transition: transform 0.1s ease-in-out;
-}
+
 .padreiphone img:hover{
     transform: scale(1.1);
     border-radius: 30px;
-    background-color: #f0f0f0;
-    
 }
 
 .iphone-1{
     grid-area: iphone1;
-    background-color: #191919;
+    background-image: url("../images/fondos/celu.png");
+    background-size: cover;
+    background-position: center;
     padding: 10%;
+    border-bottom: solid black 5px;
 }
 
 .iphone-1 h1{

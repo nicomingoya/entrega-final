@@ -20,6 +20,11 @@ h2 {
   font-family: "ADLaM Display";
 }
 
+h3 {
+  font-family: "ADLaM Display";
+  color: aliceblue;
+}
+
 /*MOBILE (320PX)*/
 /*header*/
 header {
@@ -341,7 +346,7 @@ nav {
 /*/header*/
 /*PAGE BUY*/
 .pagebuy {
-  height: auto;
+  height: 100%;
 }
 
 .buy-1 {
@@ -356,7 +361,7 @@ nav {
 }
 
 .sub-buy1 img {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -1028,20 +1033,18 @@ nav {
   transition: 0.5s;
 }
 
-.padreiphone {
-  transition: transform 0.1s ease-in-out;
-}
-
 .padreiphone img:hover {
   transform: scale(1.1);
   border-radius: 30px;
-  background-color: #f0f0f0;
 }
 
 .iphone-1 {
   grid-area: iphone1;
-  background-color: #191919;
+  background-image: url("../images/fondos/celu.png");
+  background-size: cover;
+  background-position: center;
   padding: 10%;
+  border-bottom: solid black 5px;
 }
 
 .iphone-1 h1 {
@@ -1143,7 +1146,7 @@ nav {
 }
 
 .padreipad {
-  background-image: url("../images/fondos/fondoipad.png");
+  background-image: url("../images/fondos/fondoipad.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -1155,10 +1158,6 @@ nav {
   grid-template-areas: "ipad1 ipad1 " "ipad2 ipad3 " "ipad4 ipad5 " "ipad6 ipad7";
   text-align: center;
   border-bottom: solid black 5px;
-}
-
-.padreipad {
-  transition: transform 0.1s ease-in-out;
 }
 
 .padreipad img:hover {
@@ -1267,7 +1266,10 @@ nav {
 }
 
 .padremacbook {
-  background-color: white;
+  background-image: url("../images/fondos/fondomacbook.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   width: 100%;
   height: 100%;
   display: grid;
@@ -1391,7 +1393,10 @@ nav {
 }
 
 .padrewatch {
-  background-color: white;
+  background-image: url("../images/fondos/fondoapplewatch.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   width: 100%;
   height: 100%;
   display: grid;
@@ -1504,13 +1509,15 @@ nav {
 }
 
 .padreairpods {
-  background-color: rgb(218, 217, 217);
+  background-image: url("../images/fondos/fondoairpods.png");
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(3, 33%);
-  grid-template-areas: "airpods1 airpods1 " "airpods2 airpods3 " "airpods4 airpods5 ";
+  grid-template-rows: repeat(4, 25%);
+  grid-template-areas: "airpods1 airpods1 " "airpods2 airpods3 " "airpods4 airpods5 " "airpods6 airpods6 ";
   text-align: center;
   border-bottom: solid black 5px;
 }
@@ -1524,8 +1531,8 @@ nav {
 }
 
 .padreairpods img {
-  width: 20%;
-  height: 55%;
+  width: 40%;
+  height: 60%;
   border-radius: 50px;
 }
 
@@ -1541,6 +1548,20 @@ nav {
   font-size: 0.5rem;
 }
 
+.airpods-6 {
+  grid-area: airpods6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin-top: 0px;
+}
+
+.airpods-6 img {
+  height: 100px;
+  width: 250px;
+}
+
 .airpods-1 {
   grid-area: airpods1;
   background-color: #191919;
@@ -1549,10 +1570,11 @@ nav {
 
 .airpods-1 h1 {
   color: aliceblue;
-  text-align: center;
+  text-align: start;
 }
 
 .airpods-1 h3 {
+  color: aliceblue;
   text-align: center;
   color: aliceblue;
 }
@@ -1575,6 +1597,18 @@ nav {
 
 /*480px*/
 @media (min-width: 480px) {
+  .airpods-6 {
+    grid-area: airpods6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 0px;
+  }
+  .airpods-6 img {
+    height: 150px;
+    width: 500px;
+  }
   .padreairpods h1 {
     font-size: 1.5rem;
   }
@@ -1587,6 +1621,18 @@ nav {
 }
 /*TABLET(820px)*/
 @media (min-width: 820px) {
+  .airpods-6 {
+    grid-area: airpods6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 0px;
+  }
+  .airpods-6 img {
+    height: 250px;
+    width: 1000px;
+  }
   .padreairpods h1 {
     font-size: 3rem;
   }
@@ -1602,12 +1648,24 @@ nav {
   .padreairpods h1 {
     font-size: 5rem;
   }
+  .airpods-6 {
+    grid-area: airpods6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 0px;
+  }
+  .airpods-6 img {
+    height: 300px;
+    width: 1000px;
+  }
 }
 /*MOBILE (320PX)*/
 /*footer*/
 .footer {
   background-color: white;
-  height: 25vh;
+  height: 30vh;
   padding: 40px;
 }
 
@@ -1643,11 +1701,17 @@ nav {
 }
 
 /*/footer*/
+/*480px*/
+@media (min-width: 480px) {
+  .footer {
+    height: 35vh;
+  }
+}
 /*600px*/
 /*footer*/
 @media (min-width: 600px) {
   .footer {
-    height: 30vh;
+    height: 35vh;
   }
   .footer-hijos img {
     width: 140px;
@@ -1667,7 +1731,7 @@ nav {
 @media (min-width: 820px) {
   /*footer*/
   .footer {
-    height: 35vh;
+    height: 40vh;
   }
   .footer-hijos img {
     width: 170px;
